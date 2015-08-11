@@ -5,4 +5,4 @@ Quick build as a proof of concept to convert ActionScript code to [ActionSwift3]
 
 ![screenshot](screenshot.png)
 
-Tutorial to come!
+Read the tutorial [here](https://craiggrummitt.wordpress.com/2015/08/11/swift-api-for-the-flash-guy/)
