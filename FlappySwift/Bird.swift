@@ -47,10 +47,9 @@ public class Bird: MovieClip {
         }
         self.y+=Number(currentVelocity)
         if (currentVelocity < -5) {
-            //anchor point rotation issue - removed rotation for now
-            //self.rotation = -Number(Bird.ANGLE)
+            self.rotation = -Number(Bird.ANGLE)
         } else if (currentVelocity > 5) {
-            //self.rotation = Number(Bird.ANGLE)
+            self.rotation = Number(Bird.ANGLE)
         } else {
             self.rotation = 0
         }

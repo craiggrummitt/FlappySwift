@@ -32,7 +32,7 @@ public class TitleScreen: MovieClip {
     public func changeTitle(title1:String,title2:String) {
         title.text = title1
         
-        var textFormat = TextFormat()
+        let textFormat = TextFormat()
         textFormat.font = "ChalkboardSE-Regular"
         textFormat.align = .Center
         textFormat.color = UIColor(hex: "#FFFFFF")

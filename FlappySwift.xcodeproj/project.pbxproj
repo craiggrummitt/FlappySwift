@@ -24,7 +24,7 @@
 		18642F761B76858900689AB1 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642F751B76858900689AB1 /* Bird.swift */; };
 		18642F781B76859400689AB1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642F771B76859400689AB1 /* Game.swift */; };
 		18642F7A1B7689A600689AB1 /* Tube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642F791B7689A600689AB1 /* Tube.swift */; };
-		4390E339C3346DADB887B3AF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3814098CCBF788D4DF16190 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4390E339C3346DADB887B3AF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3814098CCBF788D4DF16190 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,7 +224,9 @@
 		18642F211B75678700689AB1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = InteractiveCoconut;
 				TargetAttributes = {
 					18642F281B75678700689AB1 = {
@@ -403,6 +405,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -473,6 +476,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				INFOPLIST_FILE = FlappySwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.interactivecoconut.flappy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -485,6 +489,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				INFOPLIST_FILE = FlappySwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.interactivecoconut.flappy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -503,6 +508,7 @@
 				);
 				INFOPLIST_FILE = FlappySwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.interactivecoconut.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlappySwift.app/FlappySwift";
 			};
@@ -518,6 +524,7 @@
 				);
 				INFOPLIST_FILE = FlappySwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.interactivecoconut.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlappySwift.app/FlappySwift";
 			};

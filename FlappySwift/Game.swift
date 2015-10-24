@@ -113,7 +113,7 @@ public class Game: MovieClip {
         //Has the bird hit the ground?
         if (bird.y + (bird.height * 0.3) > ground.y) {
             bird.y = ground.y - (bird.height * 0.3)
-            println("GAME OVER 2 bird.y = \(bird.y),bird.height = \(bird.height),ground.y = \(ground.y)")
+            print("GAME OVER 2 bird.y = \(bird.y),bird.height = \(bird.height),ground.y = \(ground.y)")
             self.gameOver()
         }
     }
@@ -128,7 +128,7 @@ public class Game: MovieClip {
     public func removeTubes() {
         //remove all tubes
         for (var i:int = tubes.count - 1;i>=0;i--) {
-                var tube:Tube = tubes[i]
+                let tube:Tube = tubes[i]
                 self.removeChild(tube)
         }
         tubes=[]

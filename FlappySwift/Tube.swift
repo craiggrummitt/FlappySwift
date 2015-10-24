@@ -32,8 +32,8 @@ public class Tube: MovieClip {
         self.addChild(tubeTop)
         
         self.gapHeight = int(Stage.stageHeight * 0.27)
-        var possibleGapBeginning:int = int(Stage.stageHeight * 0.2)
-        var possibleGapEnd:int = int(Stage.stageHeight * 0.7)
+        let possibleGapBeginning:int = int(Stage.stageHeight * 0.2)
+        let possibleGapEnd:int = int(Stage.stageHeight * 0.7)
 
         self.randomGapBeginning = possibleGapBeginning + int(arc4random_uniform(UInt32(possibleGapEnd - possibleGapBeginning - self.gapHeight)))
         tubeTop.y = CGFloat(randomGapBeginning - int(tubeTop.height))
@@ -46,7 +46,7 @@ public class Tube: MovieClip {
             return tubeTop.width
         }
         set(newValue) {
-            println("DO NOT DO THIS!")
+            print("DO NOT DO THIS!")
         }
     }
 }

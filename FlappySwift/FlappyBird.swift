@@ -16,8 +16,6 @@ public class FlappyBird: MovieClip {
     private var bird:Bird
     private var game:Game?
     init() {
-        let playUpState = Sprite()
-        
         bg = MovieClip(textureNames: ["bg16x9.png"], fps: 1)
         bg.name = "BG"
         ground = Ground()
@@ -31,7 +29,7 @@ public class FlappyBird: MovieClip {
         
         bg.width = Stage.stageWidth
         bg.height = Stage.stageHeight
-        println("\(bg.width)\(bg.height)")
+        print("\(bg.width)\(bg.height)")
 
         self.addChild(bg)
         
@@ -48,7 +46,7 @@ public class FlappyBird: MovieClip {
     }
     
     private func tapTitleScreen(event:Event) {
-        println("Tap title screen bird.y = \(bird.y), Num children = \(self.numChildren)")
+        print("Tap title screen bird.y = \(bird.y), Num children = \(self.numChildren)")
         stage?.removeEventListener(InteractiveEventType.TouchBegin.rawValue, EventHandler(tapTitleScreen,"tapTitleScreen"))
         self.removeChild(titleScreen)
         game = Game(bird: bird, ground: ground)
